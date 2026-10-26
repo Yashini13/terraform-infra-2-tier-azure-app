@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>App</title>
+</head>
+<body>
+  <h1>Hello from Frontend</h1>
+
+  <button onclick="fetchData()">Get Data</button>
+  <pre id="output"></pre>
+
+  <script>
+  async function fetchData() {
+    const res = await fetch("https://23.99.178.109/api/users");  // App Gateway IP
+    const data = await res.json();
+    document.getElementById("output").textContent = JSON.stringify(data, null, 2);
+  }
+</script>
+</body>
+</html>

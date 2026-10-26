@@ -1,0 +1,21 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+crash.log
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+.terraformrc
+.terraform.tfstate.lock.info
+
+# Secrets and certs
+*.pem
+*.pfx
+*.key
+
+# Misc
+temp.txt
